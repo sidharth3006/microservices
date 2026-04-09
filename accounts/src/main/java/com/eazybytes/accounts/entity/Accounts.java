@@ -1,10 +1,10 @@
 package com.eazybytes.accounts.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.*;
 
+@Entity
+@Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor
 public class Accounts extends BaseEntity{
 
     @Column(name="customer_id")
