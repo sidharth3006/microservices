@@ -14,3 +14,21 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  config:
+    import:
+      - "application_qa.yaml"
+      - "application_prod.yaml"
+  profiles:
+    active:
+      - "qa"
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to eazybank cards related services"
+  contactDetails:
+    name: "Dragos - Developer"
+    email : "dragos@eazybank.com"
+  onCallSupport:
+    - (555)555-1234
+    - (555)555-5678
