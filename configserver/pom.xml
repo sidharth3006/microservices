@@ -69,7 +69,7 @@
 				<version>3.5.1</version>
 				<configuration>
 					<to>
-						<image>sidharth3006/${project.artifactId}:2</image>
+						<image>sidharth3006/${project.artifactId}:3</image>
 					</to>
 				</configuration>
 			</plugin>
