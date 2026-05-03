@@ -1,19 +1,4 @@
 services:
-  rabbit:
-    image: rabbitmq:4-management
-    hostname: rabbitmq
-    ports:
-      - "15672:15672"
-      - "5672:5672"
-    healthcheck:
-      test: rabbitmq-diagnostics check_port_connectivity
-      interval: 10s
-      timeout: 5s
-      retries: 10
-      start_period: 10s
-    extends:
-      file: common-config.yml
-      service: network-deploy-service
 
   configserver:
     image: sidharth3006/configserver:2
