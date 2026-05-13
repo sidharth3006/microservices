@@ -256,9 +256,17 @@ public class LoansController {
     )
     @GetMapping("/contact-info")
     public ResponseEntity<LoansContactInfoDto> getContactInfo() {
-        return ResponseEntity
-                .status(HttpStatus.OK)
-                .body(loansContactInfoDto);
+        try {
+           // Thread.sleep(100000000);
+            logger.debug("Fetching contact info");
+            return ResponseEntity
+                    .status(HttpStatus.OK)
+                    .body(loansContactInfoDto);
+        } catch (Exception e) {
+            return ResponseEntity
+                    .status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(null);
+        }
     }
 
 }

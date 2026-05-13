@@ -30,7 +30,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(path="/api",produces={MediaType.APPLICATION_JSON_VALUE})
 @Validated
-public class AccountsController {
+public class  AccountsController {
 
 
     private IAccountsService iAccountsService;
@@ -241,7 +241,12 @@ public class AccountsController {
     )
     @GetMapping("/contact-info")
     public ResponseEntity<AccountsContactInfoDTO> getContactInfo(){
-        return ResponseEntity.status(HttpStatus.OK).body(accountsContactInfoDTO);
+        try {
+            Thread.sleep(100000000);
+            return ResponseEntity.status(HttpStatus.OK).body(accountsContactInfoDTO);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
     }
 
 }
