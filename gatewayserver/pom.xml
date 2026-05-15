@@ -53,6 +53,10 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis-reactive</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
@@ -92,7 +96,7 @@
 				<version>3.5.1</version>
 				<configuration>
 					<to>
-						<image>sidharth3006/${project.artifactId}:s9</image>
+						<image>sidharth3006/${project.artifactId}:s10</image>
 					</to>
 				</configuration>
 			</plugin>
