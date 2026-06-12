@@ -119,7 +119,7 @@
 				<version>3.5.1</version>
 				<configuration>
 					<to>
-						<image>sidharth3006/${project.artifactId}:s12</image>
+						<image>sidharth3006/${project.artifactId}:s13</image>
 					</to>
 				</configuration>
 			</plugin>
