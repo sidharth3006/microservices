@@ -2,3 +2,7 @@
 *.iml
 .DS_Store
 target/
+
+# Helm build artifacts
+**/charts/*.tgz
+**/Chart.lock
