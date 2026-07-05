@@ -1,6 +1,10 @@
 server:
   port: 8090
 spring:
+  cloud:
+    kubernetes:
+      discovery:
+        all-namespaces: true
   application:
     name: loans
   profiles:
